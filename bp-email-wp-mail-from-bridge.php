@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: BP Email to WP Email From Bridge
+Plugin Name: BP Email to WP Mail From Bridge
 Plugin URI: https://github.com/thebrandonallen/bp-email-wp-mail-from-bridge/
 Description: Translates your existing `wp_mail_from` and `wp_mail_from_name` filters to be compatible with the new BP Emails.
 Author: Brandon Allen

@@ -1,4 +1,4 @@
-# Plugin Name #
+# BP Email to WP Mail From Bridge #
 **Contributors:** thebrandonallen  
 **Tags:** buddypress, email  
 **Requires at least:** 3.9  
