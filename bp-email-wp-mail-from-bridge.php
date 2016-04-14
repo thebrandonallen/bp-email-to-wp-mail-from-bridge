@@ -4,7 +4,7 @@ Plugin Name: BP Email to WP Mail From Bridge
 Plugin URI: https://github.com/thebrandonallen/bp-email-wp-mail-from-bridge/
 Description: Translates your existing `wp_mail_from` and `wp_mail_from_name` filters to be compatible with the new BP Emails.
 Author: Brandon Allen
-Version: 1.0
+Version: 1.1
 Author URI: https://github.com/thebrandonallen/
 */
 
@@ -23,6 +23,11 @@ defined( 'ABSPATH' ) || exit;
  * @return void
  */
 function tba_bp_email_to_wp_mail_from_bridge( $email_type, $email_obj ) {
+
+	// BP 2.5.3+ has native support for these filters, so bail.
+	if ( version_compare( bp_get_version(), '2.5.2', '>' ) ) {
+		return;
+	}
 
 	// Make sure we have a valid `BP_Email` instance.
 	if ( ! $email_obj instanceof BP_Email ) {
