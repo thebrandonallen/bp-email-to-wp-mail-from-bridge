@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-***NOTE: BuddyPress 2.5.3 will have native support for the `wp_mail_from` and `wp_mail_from_name` filters. If you are running version 1.1 of this plugin, it will silently fail, as it is no longer needed. Once you've upgrade to BP 2.5.3 or greater, you can uninstall this plugin.***
+>***NOTE: BuddyPress 2.5.3 will have native support for the `wp_mail_from` and `wp_mail_from_name` filters. If you are running version 1.1 of this plugin, it will silently fail, as it is no longer needed. Once you've upgrade to BP 2.5.3 or greater, you can uninstall this plugin.***
 
 BuddyPress 2.5 introduced some wonderful email functionality. In order to do this, it bypasses WordPress' default email methods. This means that any filters you applied to the `wp_mail_from` and `wp_mail_from_name` filters don’t work with emails sent by BuddyPress. This plugin translates those filters into something BuddyPress can use.
 
@@ -32,3 +32,4 @@ There are not settings for this plugin. Just follow the steps below.
 
 = 1.1 =
 * This update prepares for the upcoming BuddyPress 2.5.3 release. Once, you've updated to BP 2.5.3 or greater, you can remove this plugin. If this plugin remains active after you've upgraded to BP 2.5.3 or greater, it will just silently fail to prevent bad things from happening.
+
