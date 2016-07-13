@@ -2,14 +2,14 @@
 **Contributors:** thebrandonallen  
 **Tags:** buddypress, email  
 **Requires at least:** 3.9  
-**Tested up to:** 4.5  
+**Tested up to:** 4.6  
 **Stable tag:** 1.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
 ## Description ##
 
->***NOTE: BuddyPress 2.5.3 will have native support for the `wp_mail_from` and `wp_mail_from_name` filters. If you are running version 1.1 of this plugin, it will silently fail, as it is no longer needed. Once you've upgrade to BP 2.5.3 or greater, you can uninstall this plugin.***
+>***NOTE: As of BuddyPress 2.5.3+, this plugin is no longer needed.***
 
 BuddyPress 2.5 introduced some wonderful email functionality. In order to do this, it bypasses WordPress' default email methods. This means that any filters you applied to the `wp_mail_from` and `wp_mail_from_name` filters don’t work with emails sent by BuddyPress. This plugin translates those filters into something BuddyPress can use.
 
